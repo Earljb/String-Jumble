@@ -35,3 +35,10 @@ for x in range(lastspace-1,-2,-1):
     if jumble[x]==" " or x==-1:
         print(jumble[x+1:lastspace],end=" ")
         lastspace=x
+        
+lastspace=0
+for x in range(0,len(jumble)+1):
+    print(x)
+    if jumble[x]==" " or x>=len(jumble):
+        print(jumble[x-1:lastspace:-1],end=" ")
+        lastspace=x
