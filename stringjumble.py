@@ -29,5 +29,5 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 jumble=input("Please enter a string of text (the bigger the better): ")
 print("You entered " +jumble+ ". Now jumble it:")
 
-for x in jumble:
-    print(jumble)
+print(jumble[len(jumble)::-1])
+
