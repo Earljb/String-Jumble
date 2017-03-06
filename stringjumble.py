@@ -26,8 +26,12 @@ handy find may you that tricks or techniques few a are There
 erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
 
-jumble=input("Please enter a string of text (the bigger the better): ")
+jumble=str(input("Please enter a string of text (the bigger the better): "))
 print("You entered " +jumble+ ". Now jumble it:")
 
-print(jumble[len(jumble)::-1])
-
+print((jumble)[len(jumble)::-1])
+lastspace=len(jumble)
+for x in range(lastspace-1,-2,-1):
+    if jumble[x]==" " or x==-1:
+        print(jumble[x+1:lastspace],end=" ")
+        lastspace=x
